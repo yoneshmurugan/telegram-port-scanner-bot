@@ -12,11 +12,15 @@ Methodology: The system uses the Nmap module for port scanning, the OS module
 for system information, and the Telegram Bot API for user interaction. Encrypted 
 communication ensures data security while results are delivered in real-time. 
 
+<img width="1712" height="869" alt="diagram-export-10-10-2024-10_00_42-AM" src="https://github.com/user-attachments/assets/282a4e67-562d-4c40-8da7-642a599805c4" />
+
 ## Features
 - `/start`: Welcome message and commands list.
 - `/provideip`: Prompt for IP address. Get ip address by using command 'ipconfig' in cmd
 - `/scan`: Scan the IP for open ports (1-1024).
 - `/close <port>`: Block a port using Windows firewall.
+
+![Picture1](https://github.com/user-attachments/assets/32b683ea-a6b5-4a66-94a5-90aefc70d515)
 
 ## Function
 - Accept and validate user-provided IP addresses. o Scan for open ports using the Nmap library. 
@@ -36,10 +40,14 @@ communication ensures data security while results are delivered in real-time.
 - install nmap for windows if needed
 
 ## Usage
-Replace `BOT_TOKEN` in the code with your actual token or use env vars (bot username @Oiioii_bot). Start the bot and interact via Telegram.
+Replace `BOT_TOKEN` in the code with your actual token or use env vars. Start the bot and interact via Telegram.
+Create a .env file with your own bot token, Get your own bot token from BotFather on Telegram
+
+## EXAMPLE .env file 
+BOT_TOKEN="YOUR TOKEN"
 
 ## Security Notes
-- **Bot Token**: Never hardcode this in your code. Use environment variables (e.g., `os.getenv('BOT_TOKEN')`). If you dont know how to create bot token, use our token to access @Oiioii_bot
+- **Bot Token**: Never hardcode this in your code. Use environment variables (e.g., `os.getenv('BOT_TOKEN')`).
 - **Port Scanning**: Ensure you have permission to scan IPs to avoid legal issues.
 - **Firewall Changes**: The `/close` command modifies Windows firewall—use with caution. It wont affect the essential ports
 
@@ -51,3 +59,9 @@ friendly, cost-effective solution for network security. Testing showed accurate 
 times, making it scalable and practical. 
 This project demonstrates an innovative approach to real-time vulnerability 
 assessment, combining accessibility, functionality, and security. 
+
+## Conclusion
+The Open Port Scanner Bot is a practical and effective tool for enhancing network security. Its intuitive design makes cybersecurity accessible to non-technical users, while its modular and scalable architecture ensures adaptability. By addressing existing gaps in network security tools, the project demonstrates the potential for technology to simplify complex tasks and empower users. 
+The system's limitations highlight areas for future development, ensuring that the project remains relevant and impactful. Overall, the Open Port Scanner Bot is a significant step toward accessible and automated cybersecurity solutions. 
+
+
