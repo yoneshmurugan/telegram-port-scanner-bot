@@ -78,7 +78,6 @@ async def scan_ports(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
 # Define the /close command handler (Windows version using netsh)
 async def close_port(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = update.effective_user.id
-
     # Check if the user has provided an IP address
     if user_id not in user_data:
         await update.message.reply_text(
